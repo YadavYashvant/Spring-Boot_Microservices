@@ -18,16 +18,16 @@ public class QuestionServiceImpl implements QuestionService {
 
     @Override
     public Question create(Question question) {
-        return null;
+        return questionRepository.save(question);
     }
 
     @Override
     public List<Question> get() {
-        return null;
+        return questionRepository.findAll();
     }
 
     @Override
     public Question getOne(Long id) {
-        return null;
+        return questionRepository.findById(id).orElseThrow(() -> new RuntimeException("Question not found!"));
     }
 }
