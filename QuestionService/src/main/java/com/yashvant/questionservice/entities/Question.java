@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+// Model for Question
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
