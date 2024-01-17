@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// GET and POST requests for the Rest API
+
 @RestController
 @RequestMapping("/question")
 public class QuestionController {
